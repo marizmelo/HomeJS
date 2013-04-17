@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="xtyle/css/xtyle.css">
   <link rel="stylesheet" type="text/css" href="xtyle/css/swipeshow.css">
   <link rel="stylesheet" type="text/css" href="xtyle/css/homejs.css">
-  <link rel="stylesheet" type="text/css" href="xtyle/css/home.css"><!-- fonts -->
+  <link rel="stylesheet" type="text/css" href="xtyle/css/home.css">
   <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
@@ -22,25 +22,28 @@
 </head>
 <body>
   <div id="instructions">
-    <br><br>
     <h2>Instructions</h2>
-    <img src="http://cdn1.iconfinder.com/data/icons/gestureworks_gesture_glyphs/128/one_finger_flick_gestureworks.png">
+    <img src="xtyle/img/one_finger_flick_gestureworks.png">
     <h6>Background swipe</h6>
-    <p>Drag and swipe the background to change the picture.</p>
-    <br>
-    <img src="http://cdn1.iconfinder.com/data/icons/gestureworks_gesture_glyphs/128/one_finger_swipe_gestureworks.png">
+    <p><small>Drag and swipe the background to change the picture.</small></p>
+
+    <img src="xtyle/img/one_finger_swipe_gestureworks.png">
     <h6>Profile picture</h6>
-    <p>Click on profile to open options. Drag profile picture over options to open them.</p>
+    <p><small>You can drag the profile picture around.</small></p>
+
+    <img src="xtyle/img/one_finger_triple_tap_gestureworks.png">
+    <h6>Open menu</h6>
+    <p><small>Click on profile picture to open options.</small></p>
   </div>
 
 <div id="iphone">
   <div id="screen" class="border-radius">
-    <dl class="menu">
-      <dd id="messages" class="border-radius-circle"><div style="padding: 3px 0 0 3px"><i class="icon-chat fontsize"></i></div></dd>
-      <dd id="apps" class="border-radius-circle"><div style="padding: 8px 0 0 8px"><i class="icon-th"></i></div></dd>
-      <dd id="last" class="border-radius-circle"><div style="padding: 7px 0 0 7px"><i class=" icon-forward" style="font-size: 120%;"></i></div></dd>
+    <dl class="menu display-none">
+      <dd id="messages" class="border-radius-circle opacity-80 gradient-menu"><div style="padding: 3px 0 0 3px"><i class="icon-chat fontsize"></i></div></dd>
+      <dd id="apps" class="border-radius-circle opacity-80 gradient-menu"><div style="padding: 8px 0 0 8px"><i class="icon-th"></i></div></dd>
+      <dd id="last" class="border-radius-circle opacity-80 gradient-menu"><div style="padding: 7px 0 0 7px"><i class=" icon-forward" style="font-size: 120%;"></i></div></dd>
     </dl>
-    <img id="user" src="https://en.gravatar.com/userimage/42084372/884c1383884026ba0db3b0050b6296f4.png?size=60" class="border-radius-circle action"/>
+    <img id="user" src="xtyle/img/marizmelo.png" class="border-radius-circle action display-none"/>
     <div id="time">
         <h1><thin class="text-shadow user-select-none "></thin></h1>
    </div>
@@ -54,24 +57,24 @@
           <dl>
               
           </dl>
-        <img src="http://www.ilikewallpaper.net/iPhone-wallpapers/download/4644/Winter-Landscape-iPhone-wallpaper-ilikewallpaper_com.jpg" alt="" />
+        <img src="xtyle/img/Winter-Landscape-iPhone-wallpaper-ilikewallpaper_com.jpg" alt="" />
       </li>
         
       <li class="slide notes">
-        <img src="http://www.iphonewallpapersdownload.com/thumbnails/large_Mountain_Landscape_65171.jpg" alt="" />
+        <img src="xtyle/img/large_Mountain_Landscape_65171.jpg" alt="" />
            <div class="overlay" style="position: absolute; z-index: 8; top: 0; left: 0;">
 
           <dl>
               <dd>
-                  <a href="#" class="border-radius opacity-80">
-                      <img src="http://cdn1.iconfinder.com/data/icons/ie_ICandies/32/button_29.png" style="width: 29px; height: 29px; position: absolute; left: 15px; top: 13px;"/>
-                  <b>Missed call</b><br/>
-                  (408) 394-4938
+                  <a href="#" class="border-radius opacity-80 gradient">
+                    <i class="icon-phone" style="color: #18C712; font-size: 185%; position: absolute; left: 19px; top: 11px; z-index: 5;"></i>
+                    <b>Missed call</b><br/>
+                    (408) 394-4938
                   </a>
               </dd>
               <dd>
-              <a href="#" class="border-radius opacity-80">
-                 <img src="http://cdn1.iconfinder.com/data/icons/Koloria-Icon-Set/26/Mail_Gmail.png" style="width: 32px; height: 25px; position: absolute; left: 15px; top: 16px;"/> 
+              <a href="#" class="border-radius opacity-80 gradient">
+                  <i class="icon-gmail" style="color: red; font-size: 180%; position: absolute; left: 15px; top: 10px; z-index: 5"></i>
                   <b>You've got mail</b><br/>
                   What are you doing today?
               </a>
@@ -83,7 +86,7 @@
         
         
     <li class="slide with-overlay link-to-github active">
-          <img src="http://cdn2.stormgrounds.com/stormgrounds-cdn/media/iphone/iphone-Desert-Landscape.jpg" alt="" />
+          <img src="xtyle/img/iphone-Desert-Landscape.jpg" alt="" />
           <div class="overlay">
           <div class="in" style="padding-top: 180px;">
              <i class="icon-facebook-circled" style="color:white; font-size: 160%;"></i>

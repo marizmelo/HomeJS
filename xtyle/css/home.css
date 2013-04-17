@@ -1,17 +1,17 @@
 @font-face {
   font-family: 'home';
-  src: url("fonts/home/home.eot?80343442");
-  src: url("fonts/home/home.eot?80343442#iefix") format('embedded-opentype'), url("fonts/home/home.woff?80343442") format('woff'), url("fonts/home/home.ttf?80343442") format('truetype'), url("fonts/home/home.svg?80343442#home") format('svg');
+  src: url("fonts/home/home.eot?2164327");
+  src: url("fonts/home/home.eot?2164327#iefix") format('embedded-opentype'), url("fonts/home/home.woff?2164327") format('woff'), url("fonts/home/home.ttf?2164327") format('truetype'), url("fonts/home/home.svg?2164327#home") format('svg');
   font-weight: normal;
   font-style: normal;
 }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
-home/@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'home';
-    src: url('fonts/home/home.svg?80343442#home') format('svg');
+    src: url('fonts/home/home.svg?2164327#home') format('svg');
   }
 }
 */
@@ -41,9 +41,10 @@ home/@media screen and (-webkit-min-device-pixel-ratio:0) {
 /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
+.icon-gmail:before { content: '\6d'; } /* 'm' */
 .icon-menu:before { content: '\2630'; } /* '☰' */
 .icon-th:before { content: '\268f'; } /* '⚏' */
-.icon-forward-1:before { content: '\e800'; } /* '' */
 .icon-forward:before { content: '\27a6'; } /* '➦' */
+.icon-phone:before { content: '\e065'; } /* '' */
 .icon-chat:before { content: '\e720'; } /* '' */
 .icon-facebook-circled:before { content: '\f30d'; } /* '' */
