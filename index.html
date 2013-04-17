@@ -9,17 +9,95 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
-  <!-- <link rel="apple-touch-icon" href="touch-icon-iphone-precomposed.png"> -->
-  <!-- <link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad-precomposed.png"> -->
-  <!-- <link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone4-precomposed.png"> -->
-  <!-- <link rel="alternate" type="application/rss+xml" title="" href=""> -->
   <link rel="icon" type="image/x-icon" href="xtyle/img/favicon.ico">
   <link rel="stylesheet" type="text/css" href="xtyle/css/xtyle.css">
+  <link rel="stylesheet" type="text/css" href="xtyle/css/swipeshow.css">
+  <link rel="stylesheet" type="text/css" href="xtyle/css/homejs.css">
+  <link rel="stylesheet" type="text/css" href="xtyle/css/home.css"><!-- fonts -->
   <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+  <script src="xtyle/js/swipeshow.js"></script>
+  <script src="xtyle/js/homejs.js"></script>
 </head>
 <body>
-  
+  <div id="instructions">
+    <br><br>
+    <h2>Instructions</h2>
+    <img src="http://cdn1.iconfinder.com/data/icons/gestureworks_gesture_glyphs/128/one_finger_flick_gestureworks.png">
+    <h6>Background swipe</h6>
+    <p>Drag and swipe the background to change the picture.</p>
+    <br>
+    <img src="http://cdn1.iconfinder.com/data/icons/gestureworks_gesture_glyphs/128/one_finger_swipe_gestureworks.png">
+    <h6>Profile picture</h6>
+    <p>Click on profile to open options. Drag profile picture over options to open them.</p>
+  </div>
+
+<div id="iphone">
+  <div id="screen" class="border-radius">
+    <dl class="menu">
+      <dd id="messages" class="border-radius-circle"><div style="padding: 3px 0 0 3px"><i class="icon-chat fontsize"></i></div></dd>
+      <dd id="apps" class="border-radius-circle"><div style="padding: 8px 0 0 8px"><i class="icon-th"></i></div></dd>
+      <dd id="last" class="border-radius-circle"><div style="padding: 7px 0 0 7px"><i class=" icon-forward" style="font-size: 120%;"></i></div></dd>
+    </dl>
+    <img id="user" src="https://en.gravatar.com/userimage/42084372/884c1383884026ba0db3b0050b6296f4.png?size=60" class="border-radius-circle action"/>
+    <div id="time">
+        <h1><thin class="text-shadow user-select-none "></thin></h1>
+   </div>
+  </div>
+</div>
+            
+<div class="slideshow swipeshow">
+    
+    <ul class="slides">
+      <li class="slide">
+          <dl>
+              
+          </dl>
+        <img src="http://www.ilikewallpaper.net/iPhone-wallpapers/download/4644/Winter-Landscape-iPhone-wallpaper-ilikewallpaper_com.jpg" alt="" />
+      </li>
+        
+      <li class="slide notes">
+        <img src="http://www.iphonewallpapersdownload.com/thumbnails/large_Mountain_Landscape_65171.jpg" alt="" />
+           <div class="overlay" style="position: absolute; z-index: 8; top: 0; left: 0;">
+
+          <dl>
+              <dd>
+                  <a href="#" class="border-radius opacity-80">
+                      <img src="http://cdn1.iconfinder.com/data/icons/ie_ICandies/32/button_29.png" style="width: 29px; height: 29px; position: absolute; left: 15px; top: 13px;"/>
+                  <b>Missed call</b><br/>
+                  (408) 394-4938
+                  </a>
+              </dd>
+              <dd>
+              <a href="#" class="border-radius opacity-80">
+                 <img src="http://cdn1.iconfinder.com/data/icons/Koloria-Icon-Set/26/Mail_Gmail.png" style="width: 32px; height: 25px; position: absolute; left: 15px; top: 16px;"/> 
+                  <b>You've got mail</b><br/>
+                  What are you doing today?
+              </a>
+              </dd>
+          </dl>
+
+          </div>
+      </li>
+        
+        
+    <li class="slide with-overlay link-to-github active">
+          <img src="http://cdn2.stormgrounds.com/stormgrounds-cdn/media/iphone/iphone-Desert-Landscape.jpg" alt="" />
+          <div class="overlay">
+          <div class="in" style="padding-top: 180px;">
+             <i class="icon-facebook-circled" style="color:white; font-size: 160%;"></i>
+            <h3>Welcome Home</h3>
+            <p>The family of apps that puts your friends at the heart of your phone.</p>
+            <a class="action border-radius" href="https://www.facebook.com/home" target="_blank">Discover</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <!--<button class='previous'></button>
+    <button class='next'></button>-->
+    <div class='dots'></div>
+  </div>
+
 </body>
 </html>

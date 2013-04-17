@@ -1,0 +1,77 @@
+body{
+  padding-top: 30px;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+.menu .fontsize{
+  font-size: 150%;
+}
+.menu dd{
+    cursor: pointer;
+    color: white;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: gray;
+}
+.slide.notes dl{
+    margin-top: 150px;
+}
+.slide.notes dl dd a{
+    position: relative;
+    font-size: 80%;
+    display: block;
+    margin: 10px;
+    width: 170px;
+    background: white;
+    padding: 10px;
+    padding-left: 70px;
+}
+
+#instructions{
+    position: absolute;
+    margin-left: 530px;
+    z-index: 10;
+    text-align: center;
+    width: 200px;
+}
+#iphone{
+  background: url("http://images.apple.com/iphone/home/images/gallery_display_2x.jpg") top no-repeat;
+  background-size:550px;
+  width: 600px;
+  height: 800px;
+  position: absolute;
+}
+
+#time{
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  margin-left: 60px;
+  margin-top: 40px;
+  text-align: center;
+  z-index: 4;
+}
+
+#screen{
+  position: relative;
+  overflow: hidden;
+  width: 287px;
+  height: 520px;
+  margin-left: 154px;
+  margin-top: 100px;
+
+}
+
+#user{
+  position: absolute;
+    z-index: 10;
+    margin-top: 430px;
+    margin-left: 115px;
+    border: 1px solid white;
+    cursor: pointer;
+}
